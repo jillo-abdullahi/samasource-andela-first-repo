@@ -11,9 +11,8 @@ class TestDivision(unittest.TestCase):
 		self.assertEqual(divide_two_numbers(-500,2), -250)
 	def test_float_answer(self):
 		self.assertEqual(divide_two_numbers(5,2), 2.5)
+	def test_divide_by_zero(self):
+		self.assertRaises(ValueError,divide_two_numbers, 2,0)
 
 if __name__ == '__main__':
 	unittest.main()
-
-
-

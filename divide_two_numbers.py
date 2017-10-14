@@ -3,7 +3,7 @@ def divide_two_numbers(x,y):
 	if y == 0:
 		raise ValueError('Cannot divide by zero')
 
-	return x / y
+	return float(x) / float(y)
 
 
 
